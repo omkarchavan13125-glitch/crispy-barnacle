@@ -1,0 +1,667 @@
+l>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>साई बोअरवेल | Sai Borewell Drilling Services | High Pressure Experts</title>
+    <!-- Google Fonts & simple reset -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f4f9ff;
+            color: #1a2a3f;
+            line-height: 1.4;
+            scroll-behavior: smooth;
+        }
+
+        /* background pattern */
+        .bg-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(#cbdff2 1.2px, transparent 1.2px);
+            background-size: 34px 34px;
+            opacity: 0.3;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* header / navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px 0 12px;
+            border-bottom: 2px solid #e2edf7;
+        }
+
+        .logo h1 {
+            font-size: 1.9rem;
+            font-weight: 800;
+            color: #0b3b5f;
+            letter-spacing: -0.3px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .logo h1 .marathi-name {
+            background: #eef2fc;
+            padding: 4px 12px;
+            border-radius: 40px;
+            font-size: 1.3rem;
+        }
+        .logo p {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #2c6e9e;
+            margin-top: 6px;
+        }
+
+        .contact-header {
+            background: white;
+            padding: 8px 20px;
+            border-radius: 60px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+            font-weight: 600;
+        }
+
+        .contact-header a {
+            text-decoration: none;
+            color: #1e5a7d;
+            font-size: 1rem;
+            transition: 0.2s;
+        }
+
+        .contact-header a:hover {
+            color: #0f3b55;
+            text-decoration: underline;
+        }
+
+        /* hero section with image */
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin: 40px 0 32px;
+            gap: 32px;
+        }
+
+        .hero-text {
+            flex: 1.2;
+        }
+
+        .hero-badge {
+            background: #eef2fc;
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #135b83;
+            margin-bottom: 18px;
+        }
+
+        .hero-text h2 {
+            font-size: 2.7rem;
+            font-weight: 800;
+            line-height: 1.2;
+            color: #022b40;
+            margin-bottom: 20px;
+        }
+
+        .hero-text h2 span {
+            color: #0077b6;
+            border-bottom: 3px solid #ffb347;
+        }
+
+        .services-highlight {
+            background: white;
+            padding: 20px 24px;
+            border-radius: 32px;
+            box-shadow: 0 20px 30px -12px rgba(0,0,0,0.08);
+            margin: 24px 0;
+        }
+
+        .services-highlight p {
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            color: #0a3f5e;
+        }
+
+        .drill-sizes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            font-weight: 600;
+        }
+
+        .size-badge {
+            background: #eef2fa;
+            padding: 8px 20px;
+            border-radius: 100px;
+            font-size: 1.1rem;
+            color: #005f8c;
+        }
+
+        .size-badge strong {
+            font-size: 1.3rem;
+            margin-right: 4px;
+        }
+
+        .hero-image {
+            flex: 0.9;
+            background: linear-gradient(145deg, #d9e9fa, #c2dcf2);
+            border-radius: 48px;
+            padding: 16px;
+            text-align: center;
+            box-shadow: 0 20px 25px -15px rgba(0,0,0,0.1);
+        }
+        .hero-image img {
+            width: 100%;
+            max-width: 280px;
+            height: auto;
+            border-radius: 28px;
+            object-fit: cover;
+        }
+        .hero-image p {
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-top: 12px;
+            color: #1f5e88;
+        }
+
+        .btn-group {
+            margin-top: 24px;
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: #006d91;
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 40px;
+            cursor: pointer;
+            transition: 0.2s;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+
+        .btn-primary:hover {
+            background: #004e6b;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #006d91;
+            color: #006d91;
+            padding: 10px 26px;
+            font-weight: 600;
+            border-radius: 40px;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .btn-outline:hover {
+            background: #e2f0f7;
+        }
+
+        /* section title */
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 56px 0 32px;
+            color: #033a55;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            width: 80px;
+            height: 3px;
+            background: #ffb347;
+            display: block;
+            margin: 12px auto 0;
+            border-radius: 4px;
+        }
+
+        /* services cards */
+        .services-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 28px;
+            justify-content: center;
+            margin-bottom: 48px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 32px;
+            padding: 28px 20px;
+            flex: 1 1 260px;
+            max-width: 300px;
+            text-align: center;
+            box-shadow: 0 12px 24px -12px rgba(0,0,0,0.08);
+            transition: all 0.25s ease;
+            border: 1px solid #e9f0f6;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 24px 30px -12px rgba(0,0,0,0.12);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 16px;
+        }
+        .card-img-icon {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #0b3b5f;
+        }
+
+        .card p {
+            color: #2c4f6e;
+            font-weight: 500;
+            margin: 8px 0;
+        }
+
+        .badge-detail {
+            display: inline-block;
+            background: #ecf7ff;
+            padding: 4px 12px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-top: 12px;
+        }
+
+        /* gallery / business images section */
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+            margin: 32px 0 48px;
+        }
+        .gallery-item {
+            background: white;
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: 0 12px 20px -10px rgba(0,0,0,0.1);
+            flex: 1 1 240px;
+            max-width: 280px;
+            transition: transform 0.2s;
+        }
+        .gallery-item:hover {
+            transform: scale(1.02);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        .gallery-caption {
+            padding: 12px;
+            text-align: center;
+            font-weight: 600;
+            color: #1f5e88;
+            background: #ffffff;
+        }
+
+        /* owner contact section */
+        .owner-section {
+            background: #ffffffdd;
+            backdrop-filter: blur(2px);
+            border-radius: 48px;
+            background: #ffffff;
+            margin: 48px 0;
+            box-shadow: 0 20px 30px -10px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        .contact-card {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 32px 36px;
+            gap: 24px;
+        }
+
+        .owner-details h3 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .owner-name {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #006d91;
+        }
+
+        .contact-numbers {
+            margin: 16px 0;
+        }
+
+        .contact-numbers p {
+            font-size: 1.3rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 12px 0;
+            background: #f4f9fe;
+            padding: 8px 18px;
+            border-radius: 60px;
+        }
+
+        .contact-numbers a {
+            text-decoration: none;
+            color: #135b83;
+            font-weight: 700;
+        }
+
+        .call-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-top: 16px;
+        }
+
+        .btn-call {
+            background: #25d366;
+            color: white;
+            padding: 10px 22px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: 0.2s;
+        }
+
+        .btn-call.phone {
+            background: #0077b6;
+        }
+
+        .btn-call:hover {
+            filter: brightness(0.92);
+            transform: scale(0.97);
+        }
+
+        .trust-badge {
+            background: #eef3fc;
+            border-radius: 28px;
+            padding: 24px;
+            text-align: center;
+            margin: 30px 0 50px;
+        }
+
+        .trust-badge p {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            border-top: 1px solid #cde2f0;
+            padding: 28px 0 32px;
+            margin-top: 30px;
+            font-size: 0.85rem;
+            color: #4e6f8c;
+        }
+
+        @media (max-width: 800px) {
+            .hero-text h2 {
+                font-size: 2rem;
+            }
+            .contact-header {
+                margin-top: 12px;
+                width: 100%;
+                justify-content: center;
+            }
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .contact-card {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 28px 20px;
+            }
+            .btn-group {
+                justify-content: center;
+            }
+            .owner-name {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="bg-pattern"></div>
+
+<div class="container">
+    <!-- Navigation + Business Name: साई बोअरवेल -->
+    <div class="navbar">
+        <div class="logo">
+            <h1>
+                साई बोअरवेल 
+                <span class="marathi-name">🚰 Sai Borewell</span>
+            </h1>
+            <p>⚡ High Pressure Drilling Services | हायप्रेशर मशिनद्वारे बोअरवेल तज्ञ</p>
+        </div>
+        <div class="contact-header">
+            <a href="tel:8975484950">📞 89754 84950</a>
+            <a href="tel:9511571414">📞 95115 71414</a>
+        </div>
+    </div>
+
+    <!-- Hero area with business image -->
+    <div class="hero">
+        <div class="hero-text">
+            <div class="hero-badge">✓ 25+ years experience • साई बोअरवेल विश्वासाची ब्रँड</div>
+            <h2>साई बोअरवेल <span>उत्तम दर्जाचे बोअरवेल</span> <br> हायप्रेशर मशिनद्वारे</h2>
+            <div class="services-highlight">
+                <p>🔹 आमच्याकडे हाय प्रेशर मशिनद्वारे उपलब्ध बोअर:</p>
+                <div class="drill-sizes">
+                    <div class="size-badge"><strong>6½"</strong> शेतीसाठी</div>
+                    <div class="size-badge"><strong>7½"</strong> शेतीसाठी</div>
+                    <div class="size-badge"><strong>4½"</strong> घरगुती व विहीरीत</div>
+                </div>
+                <p style="margin-top: 14px; font-weight: 500;">✓ योग्य दरींत / शेतात बोअरवेल उपलब्ध — जलद व कार्यक्षम सेवा</p>
+            </div>
+            <div class="btn-group">
+                <a href="tel:8975484950" class="btn-primary">📞 आत्ता कॉल करा</a>
+                <a href="#contact-owner" class="btn-outline">📋 संपर्क माहिती</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <!-- business related drilling image: high pressure machine illustration (real image concept) -->
+            <img src="https://i.ibb.co/35yMQRyy/IMG-20260519-204434.jpg" alt="साई बोअरवेल ड्रिलिंग मशीन" style="background:#2C7DA0; color:white; font-weight:bold;">
+            <p>💧 हायप्रेशर ड्रिलिंग मशीन • साई बोअरवेल</p>
+        </div>
+    </div>
+
+    <!-- Business Gallery: Images related to drilling, farm, borewell -->
+    <div class="section-title">📸 आमची कामे / गॅलरी</div>
+    <div class="image-gallery">
+        <div class="gallery-item">
+            <img src="https://i.ibb.co/FcBwfZJ/images.jpg" alt="High Pressure Drilling Machine">
+            <div class="gallery-caption">⚙️ हायप्रेशर मशिन</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.ibb.co/3m7XQ2pC/c10b832a1d9b9894046e7b8a3cb24557.jpg" alt="Farm borewell 6.5 inch">
+            <div class="gallery-caption">🌾 शेती बोअरवेल 6½”</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.ibb.co/jkbGpVL9/IMG-20260519-185704.jpg" alt="Domestic borewell 4.5 inch">
+            <div class="gallery-caption">🏠 घरगुती बोअरवेल 4½”</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.ibb.co/LzGzNpwL/31-july-1.jpg" alt="Water Flow Test">
+            <div class="gallery-caption">💧 पाणी चाचणी व प्रवाह</div>
+        </div>
+    </div>
+
+    <!-- Detailed Services - cards -->
+    <div class="section-title">🚜 आमच्या सेवा</div>
+    <div class="services-grid">
+        <div class="card">
+            <div class="card-icon">🌾</div>
+            <h3>शेती बोअरवेल</h3>
+            <p>6½” व 7½” व्यासाचे बोअरवेल, शेतीसाठी उत्तम पाणीपुरवठा.</p>
+            <span class="badge-detail">हायप्रेशर मशीन</span>
+        </div>
+        <div class="card">
+            <div class="card-icon">🏠</div>
+            <h3>घरगुती बोअरवेल</h3>
+            <p>4½” घरगुती विहिरी व घरासाठी स्वच्छ व विपुल पाणी.</p>
+            <span class="badge-detail">देखभाल मोफत सल्ला</span>
+        </div>
+        <div class="card">
+            <div class="card-icon">⛲</div>
+            <h3>विहिरी पुनर्भरण</h3>
+            <p>जुन्या विहिरीचे डीपनिंग व बोअरवेल रिचार्ज सोल्यूशन.</p>
+            <span class="badge-detail">तज्ञ पथक</span>
+        </div>
+        <div class="card">
+            <div class="card-icon">⚙️</div>
+            <h3>HP ड्रिलिंग</h3>
+            <p>अत्याधुनिक हाय प्रेशर मशीन, कठीण भूभागातही प्रभावी.</p>
+            <span class="badge-detail">गुणवत्ता हमी</span>
+        </div>
+    </div>
+
+    <!-- special area: Borewell availability note -->
+    <div class="trust-badge">
+        <p>💧 <strong>“योग्या दारात बोअरवेल उपलब्ध”</strong> — जमिनीच्या सर्वेक्षणासह योग्य ठिकाणी बोअरवेल तयार करतो. <br> 
+        अनुभवी कर्मचारी, जलद सेवा, प्रामाणिक मूल्य — <strong>साई बोअरवेल</strong> हीच तुमची ओळख.</p>
+    </div>
+
+    <!-- Owner & Contact Detailed Section -->
+    <div id="contact-owner" class="owner-section">
+        <div class="contact-card">
+            <div class="owner-details">
+                <h3>📌 व्यवस्थापक व मालक</h3>
+                <div class="owner-name">श्री. प्रकाश चव्हाण</div>
+                <div class="contact-numbers">
+                    <p>📱 <a href="tel:8975484950">+91 89754 84950</a></p>
+                    <p>📞 <a href="tel:9511571414">+91 95115 71414</a></p>
+                </div>
+                <div class="call-buttons">
+                    <a href="tel:8975484950" class="btn-call phone">📞 कॉल करा (प्रकाश सर)</a>
+                    <a href="https://wa.me/918975484950?text=नमस्कार,%20साई%20बोअरवेल%20सेवेबद्दल%20माहिती%20हवी%20होती." class="btn-call" target="_blank">💬 WhatsApp मेसेज</a>
+                </div>
+                <p style="margin-top: 18px; font-size: 0.85rem;">⏱️ सेवा वेळ : सकाळी 8 ते संध्याकाळी 7 | सर्व जिल्ह्यात उपलब्ध</p>
+            </div>
+            <div style="background: #eaf4fc; padding: 16px 24px; border-radius: 28px; min-width: 180px;">
+                <p style="font-weight: 700;">📋 द्रुत माहिती :</p>
+                <ul style="margin-left: 20px; margin-top: 8px;">
+                    <li>✔️ 6½”, 7½” शेती बोअर</li>
+                    <li>✔️ 4½” घरगुती</li>
+                    <li>✔️ विहीर खोलीकरण</li>
+                    <li>✔️ हायप्रेशर मशीन</li>
+                    <li>✔️ साई बोअरवेल गुणवत्ता</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- additional information : drilling process with business image -->
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; margin: 20px 0 10px;">
+        <div style="flex:1; background: #FFFFFFCC; background: white; border-radius: 28px; padding: 20px;">
+            <h3 style="color: #0b5e7e;">🔧 आमची प्रक्रिया (साई बोअरवेल)</h3>
+            <p>➤ जमीन तपासणी व योग्य बिंदू निश्चिती<br>
+            ➤ हायप्रेशर ड्रिलिंग मशिनद्वारे बोअरवेल खोदाई<br>
+            ➤ पाईपिंग व फिल्टर बसविणे<br>
+            ➤ पाणी चाचणी व प्रवाह तपासणी<br>
+            ➤ हमीभर सेवा व देखभाल सल्ला</p>
+        </div>
+        <div style="flex:1; background: white; border-radius: 28px; padding: 20px;">
+            <h3 style="color: #0b5e7e;">🌟 ग्राहकांचा विश्वास</h3>
+            <p>प्रकाश चव्हाण (साई बोअरवेल) यांच्या drilling सेवेमुळे शेकडो शेतकरी व गृहस्थांचा पाणी प्रश्न सुटला आहे. आधुनिक मशिनरी आणि प्रामाणिकपणा ही आमची ओळख.</p>
+            <p style="margin-top: 12px;">⭐ ⭐ ⭐ ⭐ ⭐ स्थानिक पातळीवर उत्तम प्रतिसाद</p>
+        </div>
+    </div>
+
+    <!-- cta final with business name -->
+    <div style="text-align: center; margin: 48px 0 20px; background: #E8F0F9; border-radius: 56px; padding: 28px 20px;">
+        <h3 style="font-size: 1.8rem; font-weight: 700;">🚰 साई बोअरवेल – बोअरवेलसाठी आजच संपर्क साधा</h3>
+        <p style="margin: 12px 0; font-size: 1.1rem;">तुमच्या शेतासाठी / घरासाठी दर्जेदार बोअरवेल हवे? आमच्या तज्ञ टीमशी बोला.</p>
+        <div class="btn-group" style="justify-content: center; margin-top: 16px;">
+            <a href="tel:9511571414" class="btn-primary" style="background: #005f73;">📞 95115 71414</a>
+            <a href="tel:8975484950" class="btn-outline">📞 89754 84950</a>
+        </div>
+        <p style="margin-top: 24px; font-size: 0.8rem;">* आपत्कालीन सेवा उपलब्ध | महाराष्ट्रात सर्वत्र | साई बोअरवेल विश्वासाची हमी</p>
+    </div>
+
+    <footer>
+        <p>© 2026 <strong>साई बोअरवेल (Sai Borewell)</strong> — उत्तम हायप्रेशर बोअरवेल तंत्रज्ञान<br>
+        📍 मुख्यालय: सातारा / कोल्हापुर परिसर | मोबाइल: 89754 84950, 95115 71414<br>
+        🌐 प्रकाश चव्हाण यांची विश्वासार्ह सेवा | Drilling Services since 2005</p>
+    </footer>
+</div>
+
+<!-- smooth scroll -->
+<script>
+    (function() {
+        const contactLink = document.querySelector('a[href="#contact-owner"]');
+        if(contactLink) {
+            contactLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.getElementById('contact-owner');
+                if(target) {
+                    target.scrollIntoView({ behavior:'smooth', block: 'start' });
+                }
+            });
+        }
+        console.log("साई बोअरवेल - Sai Borewell Drilling Services with business images");
+    })();
+</script>
+</body>
+</html>
